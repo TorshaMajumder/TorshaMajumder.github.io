@@ -301,7 +301,7 @@ hr{
         }
       }
 
-      @media screen and (max-width: 850px)  {
+      @media screen and (max-width: 950px)  {
         html {
             --big-font-size: 1.00rem;
             --h1-font-size: 1.05rem;
