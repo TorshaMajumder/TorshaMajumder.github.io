@@ -235,7 +235,7 @@ hr{
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 
-@media screen and (max-width: 480px)  {
+@media screen and (max-width: 700px)  {
   html {
       --big-font-size: 1.00rem;
       --h1-font-size: 1.05rem;
@@ -247,7 +247,7 @@ hr{
   }
   #self-image
     {
-      width: 300px;
+      width: 200px;
       /* height: 150px; */
       float: right;
       padding-right: 2.5rem;
