@@ -235,7 +235,7 @@ hr{
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 
-@media screen and (max-width: 700px)  {
+@media screen and (max-width: 1500px)  {
   html {
       --big-font-size: 1.00rem;
       --h1-font-size: 1.05rem;
@@ -247,8 +247,8 @@ hr{
   }
   #self-image
     {
-      width: 200px;
-      /* height: 150px; */
+      width: 500px;
+      height: 250px; 
       float: right;
       padding-right: 2.5rem;
       padding-left: 0.0rem; 
@@ -257,6 +257,93 @@ hr{
     }
   }
 
+  @media screen and (max-width: 1300px)  {
+    html {
+        --big-font-size: 1.00rem;
+        --h1-font-size: 1.05rem;
+        --h2-font-size: .75rem;
+        --h3-font-size: .50rem;
+        --normal-font-size: .40rem;
+        --small-font-size: .40rem;
+        --smaller-font-size: .45rem;
+    }
+    #self-image
+      {
+        width: 450px;
+        height: 250px; 
+        float: right;
+        padding-right: 2.5rem;
+        padding-left: 0.0rem; 
+        background-color: black;
+        background-image: url(../img/stars.gif);
+      }
+    }
 
+    @media screen and (max-width: 1100px)  {
+      html {
+          --big-font-size: 1.00rem;
+          --h1-font-size: 1.05rem;
+          --h2-font-size: .75rem;
+          --h3-font-size: .50rem;
+          --normal-font-size: .40rem;
+          --small-font-size: .40rem;
+          --smaller-font-size: .45rem;
+      }
+      #self-image
+        {
+          width: 400px;
+          height: 200px; 
+          float: right;
+          padding-right: 2.5rem;
+          padding-left: 0.0rem; 
+          background-color: black;
+          background-image: url(../img/stars.gif);
+        }
+      }
+
+      @media screen and (max-width: 850px)  {
+        html {
+            --big-font-size: 1.00rem;
+            --h1-font-size: 1.05rem;
+            --h2-font-size: .75rem;
+            --h3-font-size: .50rem;
+            --normal-font-size: .40rem;
+            --small-font-size: .40rem;
+            --smaller-font-size: .45rem;
+        }
+        #self-image
+          {
+            width: 300px;
+            height: 150px; 
+            float: right;
+            padding-right: 2.5rem;
+            padding-left: 0.0rem; 
+            background-color: black;
+            background-image: url(../img/stars.gif);
+          }
+        }
+
+
+        @media screen and (max-width: 750px)  {
+          html {
+              --big-font-size: 1.00rem;
+              --h1-font-size: 1.05rem;
+              --h2-font-size: .75rem;
+              --h3-font-size: .50rem;
+              --normal-font-size: .40rem;
+              --small-font-size: .40rem;
+              --smaller-font-size: .45rem;
+          }
+          #self-image
+            {
+              width: 250px;
+              height: 125px; 
+              float: right;
+              padding-right: 2.5rem;
+              padding-left: 0.0rem; 
+              background-color: black;
+              background-image: url(../img/stars.gif);
+            }
+          }
 /* For medium devices */
 /* For large devices */
