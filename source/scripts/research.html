@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--==================== SWIPER CSS ====================-->
+        <!-- Including the bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!--==================== ====================-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="../css/styles-research.css">
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <title>Torsha Majumder</title>
+        <link rel="icon" href="../img/butterfly.png" type="image/x-icon" />
+    </head>
+    
+    
+    <body>
+        <main class="main">
+
+            <!--==================== HOME ====================-->
+            <section class="research-list" id="research-list">
+                <h1>Current Research</h1>
+                <hr>
+                <div class="container-fluid">
+                    <div class="row">
+                        <h4 id="project-heading">
+                            Characterization and Optimization of the Transition-Edge-Sensor (TES) Detector Systems in a Double Fourier Interferometer (developed at the University of Lethbridge)
+                        </h4>
+                        <p id="project-subheading"><b>--- M.Sc. Thesis</b></p>
+                        <p class="desc", id="desc">
+                            The study of astronomy in the far-infrared (far-IR) wavelength is critical for gaining insights into the cosmic origins because approximately half of the total energy density of Electromagnetic (EM) radiation emitted by stars and accreting objects in the Universe lies within the far-IR region. Research conducted in far-IR regimes plays a crucial role in enhancing our understanding of the planetary systems and the search for life, the early stages of stellar evolution, the formation of galaxies, and the origins of the Universe.
+                            <br><br>The field of far-IR astronomy presents several key challenges, including the development of suitable detector systems, mitigation of Earth's atmosphere attenuation, the necessity for cryogenic cooling of optical systems and detectors, and the limitation in spatial resolution of observations within the 1 to 12 THz range, which corresponds to far-infrared wavelengths. The astronomical community recognizes that the development of space-based far-IR interferometers holds significant potential to interpret the cosmos in the far-IR wavelength.
+                        </p> 
+                        <div class="row", id="desc-row-alt">
+                            <div class="col" id="desc-alt">
+                                <p>
+                                The laboratory testbed (Double-Fourier-Interferometry) DFI instruments have been developed by NASA Goddard (U.S.A.), which is a collaboration between Cardiff University, University College London, and the Rutherford Appleton Laboratory (U.K.), the National Astronomical Observatory (Japan), and now the University of Lethbridge (Canada). The DFI testbed design at U Lethbridge is similar to that of a Michelson spatial interferometer coupled to a Mach-Zehnder-like Fourier Transform Spectrometer (FTS) spectral interferometer (similar to the Herschel Spectral and Photometric Imaging Receiver (SPIRE) FTS. The University of Lethbridge played a leading role in the ESA's <a href="https://www.asc-csa.gc.ca/eng/satellites/herschel/">Herschel SPIRE mission</a>!
+                                <br><br><br>As a part of the <a href="https://www.ulethbridge.ca/unews/company/astronomical-instrumentation-group">Astronomical Instrumentation Group (AIG)</a> at U Lethbridge, my research focuses on:   
+                                </p> 
+                            </div> 
+                            <div class="col-md-4" id="self-image-col">
+                                <figure>
+                                <img src="../img/dfi.JPG" alt="../img/dfi.JPG" id="self-image">
+                                <figcaption id="fig-caption">DFI testbed @ U Lethbridge</figcaption>
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="li-desc", id="li-desc">
+                            <ul>
+                                <li>
+                                    Confirming the temperature calibration of the TES Bolometer by employing various current bias values within the 1 μA - 15 μA range.
+                                </li>
+                                <li>
+                                    Investigating the impact of bit depth effect by transitioning from 32-bit integer Proportional-Integral-Derivative (PID) configuration to 32-bit float Proportional-Integral-Derivative (PID) algorithms.
+                                </li>
+                                <li>
+                                    Deriving and validating optimal noise parameters for the off-axis pixels akin to the central detector.
+                                </li>
+                                <li>
+                                    Analyzing the detector's cross-talk experimental data.
+                                </li>
+                                <li>
+                                    Comparing the efficacy of rapid scan versus step and integrate modes for the FTS/DFI testbed.
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <h4 id="project-heading">Detection of Super Luminous Supernovae (SLSN) Candidates in the Zwicky Transient Facility (ZTF) using Adaptive Learning</h4>
+                        <p id="project-subheading">
+                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M.V., Malanchev, K.L., Ishida, E.E.O. <a href="https://snad.space">(The SNAD Team)</a>, Identifying Potential Super Luminous Supernovae in the Zwicky Transient Facility through Prior Knowledge in Adaptive Learning. in prep, 2024
+                        </p>
+                        <p class="desc", id="desc">
+                            We presented our analysis on data release 8 sourced from the Zwicky Transient Facility (ZTF DR8), focusing on identifying potential Superluminous Supernovae (SLSN) candidates in the ZTF r-band.
+                            <br><br>In our analysis, we utilized the light-curve package developed by Malanchev et al., 2021, to derive 53 statistical features from each light curve. Subsequently, these features were employed in the <a href="https://coniferest.snad.space/en/latest/">Pineforest algorithm</a>, an adaptive learning algorithm developed by Korolev et al. (in prep, 2024). We leveraged the prior knowledge in the pineforest algorithm, which comprises 8 reported SLSN candidates from the <a href="https://www.wis-tns.org">Transient Name Server (TNS)</a> and 60 non-SLSN candidates discovered during our investigation. 
+                            <br><br>Notably, our analysis led to the discovery of two new supernova candidates (<a href="https://www.wis-tns.org/object/2018moa">AT 2018moa</a> and <a href="https://www.wis-tns.org/object/2018mob">AT 2018mob</a>), as reported at TNS by the SNAD team. Moreover, we successfully identified one confirmed Superluminous Supernova (Type-I) - SN 2018fcg and two confirmed Supernovae already reported at TNS as SN 2018dfa and SN 2019bmj. Additionally, our investigation identified several candidates for classification refinement, including - AT 2019nkc, AT 2019sez, AT 2023vgc, AT 2018lus, and AT 2019tjf.
+                        </p>
+                        <hr>
+                    </div> 
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <h4 id="project-heading">Detection of Anomalous and Rare Transients in Zwicky Transient Facility (ZTF) using Contrastive Learning
+                        </h4>
+                        <p id="project-subheading">
+                            <b>--- Project:</b> In collaboration with <a href="https://snad.space">the SNAD Team</a> and <a href="https://fink-broker.org">the FINK Broker</a>
+                        </p>
+                        <p class="desc", id="desc">
+                            This project involves designing a BERT-based transformer model (Devlin et al., 2018) incorporating a contrastive loss function to generate embeddings through unsupervised learning. We will integrate these embeddings into adaptive learning algorithms, such as AAD and Pineforest (part of <a href="https://coniferest.snad.space/en/latest/">the coniferest package</a>), developed by the SNAD team, to detect anomalous light curves within the Zwicky Transient Facility (ZTF). This research is currently undergoing preparation for publication, and a thorough analysis of the findings will be released shortly. The code will be made publicly accessible upon acceptance of the paper.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <h4 id="project-heading">Deep Probabilistic Neural Network for Inverse Tidal Evolution</h4>
+                        <p id="project-subheading">
+                            <b>--- Conference Presentation/Project:</b> <a href="https://bsnp.info/International-Meeting-2">The International Meeting on Eclipsing Binary Star Systems, 2024</a>
+                        </p>
+                        <p class="desc", id="desc">
+                            Tidal forces impact the behavior of binary star systems, affecting their observable properties. An analysis of approximately 200 eclipsing binaries observed by the Kepler mission, combined with available stellar and orbital parameters, has led to a catalog suitable for studying the amount and properties of tidal dissipation. We calibrated a tidal dissipation model to simultaneously allow the reproduction of the observed eccentricities of all systems and the period-eccentricity envelope of the entire population. We conduct an MCMC sampling to propagate the observational uncertainties to the final result, which requires a likelihood function to assess how well a given set of parameters aligns with observations. We use a numerical solver at each MCMC step to find the initial orbital period and eccentricity that match the present-day values in the Kepler catalog. However, the solver needs to run many evolutions, testing different initial conditions to reproduce the final values. To address this challenge, we developed a probabilistic deep neural network to provide reasonable estimates for the initial values, requiring fewer evolutions to find the correct initial values owing to faster solver convergence. We first transformed the standardized stellar and orbital parameters into a new latent space using an auto-encoder to extract new embeddings from the regression data set without lossy compression; it enables faster training and prevents vanishing gradients. Subsequently, a probabilistic neural network is modeled as an independent normal distribution, assuming non-linearity in the data to learn the statistical parameters, which we then used to estimate suitable 
+                            initial guesses for the solver.
+                            <br><br>The initial findings from the 1D solver indicate that the Probabilistic neural network succeeded the existing brute-force algorithm in ~65% of instances, compared to the latter's success rate of ~10%. We anticipate an improvement in the results of both the 1D and 2D solvers compared to the existing model as we accumulate more data.  
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+            </section>
+            
+        </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">&copy; 2024 Torsha Majumder</footer>
+    </body>
+</html>
+
+
+
+
+
+
+ 
+       
+        
+        
+
+
+        

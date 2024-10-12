@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        
+        <!--==================== UNICONS ====================-->
+        
+        
+        <!--==================== SWIPER CSS ====================-->
+        <!-- Including the bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!--==================== ====================-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="source/css/styles.css">
+        <link rel="stylesheet" href="source/css/swiper-bundle.min.css">
+        <title>Torsha Majumder</title>
+        <link rel="icon" href="source/img/butterfly.png" type="image/x-icon" />
+    </head>
+    <body>
+      <!--==================== MAIN ====================-->
+      <main class="main">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" role="navigation" style="background-color:black;">
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="source/scripts/research.html">Research</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="source/scripts/employment.html">Work</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="source/scripts/teaching.html">Teaching</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="source/scripts/cv.html">CV</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--==================== HOME ====================-->
+        <section class="aboutme" id="about-section">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col" id="about-me-col">
+                <p>
+                  I am a Data Scientist and a Physics Graduate Student aspiring to transition my career into Astrophysics and Astrophotography. I am pursuing my M.Sc. at the University of Lethbridge after completing an M.S. in Computer Science from the University of Texas at Dallas. With several years of experience as a Data Scientist and a Software Engineer, I focus on developing advanced astronomical models, particularly for anomaly detection. My recent endeavors have led me to explore the intricacies of Transition-Edge-Sensor (TES) Detector Systems and Double Fourier Interferometry as an integral part of the instrumentation team at U Lethbridge.
+                  <br><br>Check out my website for more details!
+                </p> 
+              </div> 
+              <div class="col-md-4" id="self-image-col">
+                <img src="source/img/potrait.png" alt="source/img/potrait-alt.png" id="self-image">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+      <div class="container">
+        <!-- Start of Card class -->
+        <div class="accordion" id="accordionExample">
+          <!-- Start of Cards -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <h1 style="font-size: 30px;"><i class="fa fa-graduation-cap"></i> Education</h1>
+                </button>
+              </h5>
+            </div>
+            <!-- Begining of the card body -->
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+
+                <ul class="educationlist">
+                  <li>
+                      <div class="date">The University of Lethbridge, Alberta, Canada</div>
+                      <div class="title">M.Sc. in Physics (Thesis)<span id="uni-date">Jan. 2024 - Present</span></div>
+                      <div class="descr">Thesis: <i>Characterization and Optimization of the Transition-Edge-Sensor (TES) Detector
+                        Systems in a Double Fourier Interferometer (developed at U Lethbridge)</i><br>Advisor: Prof. Locke Spencer </div>
+                  </li>
+                  <li>
+                      <div class="date">The University of Texas at Dallas, Texas, USA</div>
+                      <div class="title">M.S. in Computer Science (Thesis)<span id="uni-date">Aug. 2018 - May 2020</span></div>
+                      <div class="descr">Thesis: <i>Ensembles of Oblique Decision Trees</i><br>Advisor(s): Prof. Sriraam Natarajan and Dr. Gautam Kunapuli
+                      </div>
+                  </li>
+                  <li>
+                      <div class="date" style="font-size: 0.9rem;">West Bengal University of Technology, West Bengal, India</div>
+                      <div class="title">B.Tech. in Information Technology<span id="uni-date">Jul. 2013 - Jul. 2017</span></div>
+                      <div class="descr">Final Year Project: <i>Institutes Library Management System</i><br>Advisor: Prof. Arindam Chakravorty  </div>
+                  </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <!-- End of the card body -->
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h1 style="font-size: 30px;"><i class="fa fa-file-text"></i> Publications</h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <ol class="publicationlist">
+                <li> 
+                    <div class="descr" style="font-weight: 600;">Majumder, T., Pruzhinskaya, M.V., Malanchev, K.L., Ishida, E.E.O. (The SNAD Team), Identifying Potential Super Luminous Supernovae in the Zwicky Transient Facility through Prior Knowledge in Adaptive Learning. in prep, 2024</div>
+                </li>
+                <li>
+                    <div class="descr" style="font-weight: 600;">Majumder, T. (2020). Ensembles of oblique decision trees [Master's Thesis, University of Texas, Dallas]. UTD Theses and Dissertations. URI: <a href="https://hdl.handle.net/10735.1/8818">https://hdl.handle.net/10735.1/8818</a></div>
+                </li>
+                <li>
+                    <div class="descr">Schussler, J., Penev, K., <span style="font-weight: 600;">Majumder, T.</span>, Comprehensive Bayesian Modeling of Tidal Circularization of Kepler Eclipsing Binaries. 2024, in prep.</div>
+                </li>
+                <li>
+                    <div class="descr">Huang, H., Muthukrishna, D., Nair, P., Zhang, Z., Fausnaugh, M., <span style="font-weight: 600;">Majumder, T.</span>, Ricker, G. Foley, R., Predicting the Age of Astronomical Transients from Real-Time Multivariate Time Series. arXiv preprint, <a href="https://arxiv.org/abs/2311.17143">https://arxiv.org/abs/2311.17143</a></div> 
+                </li>
+                <li>
+                  <div class="descr">Huang, H., Muthukrishna, D., Nair, P., Zhang, Z., Fausnaugh, M., <span style="font-weight: 600;">Majumder, T.</span>, Ricker, G. Foley, R., Predicting the Age of Astronomical Transients from Real-Time Multivariate Time Series. 2023, Neural Information Processing Systems (NeurIPS 2023), accepted.</div> 
+              </li>
+            </ol>
+            </div>
+          </div>
+        </div>
+        <!-- End of the card body -->
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h1 style="font-size: 30px;"><i class="fa fa-trophy"></i> Awards & Scholarships</h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <ol class="awardslist">
+                <li>
+                    <div class="descr"><span style="font-weight: 600;">University of Lethbridge Graduate Research Award (ULGRA), 2024</span></div>
+                </li>
+                <li>
+                    <div class="descr">Awarded as <span style="font-weight: 600;">the Associate Member of the Institute of Engineers (India)</span> in Computer Science and Engineering in 2017.</div>
+                </li>
+                <li>
+                    <div class="descr">Awarded for <span style="font-weight: 600;">the best 2017 final year project - Institutes Library Management System - by the
+                      institution <a href="https://stcet.ac.in/">(STCET)</a></span> and was among <span style="font-weight: 600;">the top finalist for the software development competition by
+                      Cognizant (India)</span>.</div> 
+                </li>
+            </ol>
+            </div>
+          </div>
+        </div>
+        <!-- End of the card body -->
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h1 style="font-size: 30px;"><i class="fa fa-flask"></i> Research </h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              
+              <ul class="educationlist">
+                <li>
+                  <div class="date">The SNAD Team and the FINK Broker Collaboration</div>
+                  <div class="title"><span id="uni-date">Apr. 2024 - Present</span></div>
+                  <div class="descr">1. Detection of Super Luminous Supernovae (SLSN) Candidates in the Zwicky Transient
+                      Facility (ZTF) using Adaptive Learning<br><br>
+                      2. Detection of Anomalous and Rare Transients in Zwicky Transient Facility (ZTF) using Contrastive Learning
+                  </div>
+                </li>
+                <li>
+                    <div class="date">The University of Lethbridge, Alberta, Canada</div>
+                    <div class="title">Advisor: Prof. Locke Spencer<span id="uni-date">Jan. 2024 - Present</span></div>
+                    <div class="descr">Characterization and Optimization of the Transition-Edge-Sensor (TES) Detector
+                      Systems in a Double Fourier Interferometer (developed at U Lethbridge)
+                    </div>
+                </li>
+                <li>
+                    <div class="date" style="font-size: 0.9rem;">The University of Texas at Dallas, Texas, USA</div>
+                    <div class="title">Advisor: Prof. Kaloyan Penev<span id="uni-date">Nov. 2021 - Present</span></div>
+                    <div class="descr">Deep Probabilistic Neural Network for Inverse Tidal Evolution</div>
+                </li>
+                <li>
+                  <div class="date" style="font-size: 0.9rem;">Massachusetts Institute of Technology, Cambridge, MA, USA</div>
+                  <div class="title">Advisor: Dr. Daniel Muthukrishna<span id="uni-date">Oct. 2021 - Nov. 2023</span></div>
+                  <div class="descr">Self-supervised classification and anomaly detection of transients</div>
+              </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <!-- End of the card body -->
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <h1 style="font-size: 30px;"><i class="fa fa-briefcase"></i> Work Experience</h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+
+              <ul class="educationlist">
+                <li>
+                    <div class="date">The University of Lethbridge, Alberta, Canada</div>
+                    <div class="title">Graduate Research Assistant<span id="uni-date">Jan. 2024 - Present</span></div>
+                </li>
+                <li>
+                    <div class="date">NU Energy India, Kolkata, West Bengal, India</div>
+                    <div class="title">Senior Data Scientist<span id="uni-date">Aug. 2023 - Dec. 2023</span></div>
+                </li>
+                <li>
+                    <div class="date">Verizon, Temple Terrace, Florida, USA</div>
+                    <div class="title">Data Scientist<span id="uni-date">Jun. 2021 - May 2023</span></div>
+                </li>
+                <li>
+                  <div class="date">Centillion Infotech LLC, Dallas, Texas, USA</div>
+                  <div class="title">Software Engineer<span id="uni-date">Jul. 2020 - Feb. 2021</span></div>
+                </li>
+
+                <li>
+                  <div class="date">NU Energy India, Kolkata, West Bengal, India</div>
+                  <div class="title">Data Analyst<span id="uni-date">Jul. 2017 - Jul. 2018</span></div>
+                </li>
+              
+              </ul>   
+
+            </div>
+          </div>
+        </div>
+        <!-- End of the card body -->
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <h1 style="font-size: 30px;"><i class="fa fa-leanpub"></i> Teaching Experience</h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body">
+
+              <ul class="educationlist">
+                <li>
+                    <div class="date">The University of Lethbridge, Alberta, Canada</div>
+                    <div class="title">Graduate Teaching Assistance<span id="uni-date">Jan. 2024 - Present</span></div>
+                </li>
+                <li>
+                    <div class="date">2U Inc./edX, Lanham, Maryland, USA</div>
+                    <div class="title">Faculty Member<span id="uni-date">Dec. 2020 - May 2023</span></div>
+                </li>
+              
+              </ul>   
+
+            </div>
+          </div>
+        </div>
+        <!-- End of the card body -->
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingSeven">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <h1 style="font-size: 30px;"><i class="fa fa-tasks"></i> Talks & Presentations</h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+            <div class="card-body">
+              <ol class="talkslist">
+                <li>
+                  <div class="descr"><p><span style="font-weight: 600;">Deep Probabilistic Neural Network for Inverse 
+                    Tidal Evolution, Sep. 2024</span><br> --- The International Meeting on Eclipsing Binary Star Systems,
+                     Weihai, Shandong, China</p></div>
+                </li>
+                <li>
+                  <div class="descr"><p><span style="font-weight: 600;">Unsupervised classification and anomaly detection 
+                    of TESS transients, Sep. 2022</span><br> --- TESS Science Talk,
+                     Massachusetts Institute of Technology, Cambridge, MA, USA</p></div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- End of the card body -->
+        
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingEight">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                <h1 style="font-size: 30px;"><i class="fa fa-gears"></i> Skills </h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+            <div class="card-body">
+              <ol class="awardslist">
+                <li>
+                    <div class="descr"><span style="font-weight: 600;">Programming Languages:</span> Python, MATLAB, R, SQL, JAVA, C, LabVIEW, Bash</div>
+                </li>
+                <li>
+                    <div class="descr"><span style="font-weight: 600;">Software/ Packages:</span> Scikit-Learn, SciPy, TensorFlow, PyTorch, Keras, Pandas, Astropy, Lightkurve,
+                      Matplotlib, PySpark (but are not limited to these!)</div>
+                </li>
+            </ol>
+            </div>
+          </div>
+        </div>
+        <!-- End of the card body -->
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingNine">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                <h1 style="font-size: 30px;"><i class="fa fa-group"></i> Memberships & Outreach</h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="headerformembershipsoutreach">Memberships</div>
+              <ul class="membershipslist">
+                <li>
+                  <div class="descr"><span style="font-weight: 400;">Institute of Engineers (India)</span></div>
+                </li>
+                <li>
+                  <div class="descr"><span style="font-weight: 400;">Artificial Intelligence Society, The University of Texas, Dallas</span></div>
+                </li>
+                <li>
+                  <div class="descr"><span style="font-weight: 400;">Society of Women Engineers, The University of Texas, Dallas</span></div>
+                </li>
+              </ul>
+            <div class="headerformembershipsoutreach">Outreach</div>
+              <ul class="membershipslist">
+                <li>
+                  <div class="descr">Please find the link to my guest post on <span style="font-weight: 500;"><a href="https://astrobites.org/">Astrobite<a></span>: <span style="font-weight: 400;"><a href="https://astrobites.org/2024/07/07/guest-anomaly-detection/">Anomaly Detection and Classification of Astronomical Objects in the Age of Machine Learning<a>!</span></div>
+                </li>
+                <li>
+                  <div class="descr">On July 15, 2024, I participated in a workshop hosted by <span style="font-weight: 500;"><a href="https://www.shad.ca">SHAD Canada<a></span>, where I contributed by guiding students in applying signal processing techniques, including the development of filters and amplifiers.</div>
+                </li>
+                <li>
+                  <div class="descr">On May 13, 2024, I delivered presentations on FAR-IR instrumentation. I conducted laboratory tours for students from <span style="font-weight: 600;">Lethbridge Collegiate Institute (LCI)</span>, intending to engage them in physics and astronomy.</span></div>
+                </li>
+                <li>
+                  <div class="descr">On February 27, 2024, I coordinated an educational visit to the <span style="font-weight: 500;"><a href="https://www.lethbridgeastronomysociety.ca">Lethbridge Astronomical Society (LAS)<a></span> for undergraduate students interested in astronomy.</span></div>
+                </li>
+                <li>
+                  <div class="descr">I have been a <span style="font-weight: 600;">Citizen Scientist</span> at <span style="font-weight: 600;"><a href="https://www.zooniverse.org">Zooniverse</a></span> since May 2020.</div>
+                </li>
+                <li>
+                  <div class="descr">I was a computer science outreach instructor for elementary schools in Richardson and Mesquite, Texas, USA.</div>
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- End of the card body -->
+        <!-- Start of Cards -->
+        <div class="card">
+          <div class="card-header" id="headingTen">
+            <h5 class="mb-0">
+              <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                <h1 style="font-size: 30px;"><i class="fa fa-address-card"></i> Contact</h1>
+              </button>
+            </h5>
+          </div>
+          <!-- Begining of the card body -->
+          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+            <div class="card-body" id="location-card">
+              <div id="social-links">
+                <a href="mailto:torsha.majumder.work@gmail.com"><i class="fa fa-google"></i></a>
+                <a href="mailto:torsha.majumder@uleth.ca"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/TorshaMajumder"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/torshamajumder/"><i class="fa fa-linkedin-square"></i></a>
+              </div>
+              <div id="location">
+                <p style="font-size: 16px;"><a href=""><i class="fa fa-map-marker"></i></a> SA 9312, Institute of Space and Imaging Science, <br>Department of Physics & Astronomy, The University of Lethbridge, <br>Lethbridge, Alberta, Canada, T1J5K5</p>
+              </div>
+            </div>
+          </div>
+        <!-- End of the card body -->
+        </div>
+      </div>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">&copy; 2024 Torsha Majumder</footer>
+  </body>
+</html>
+        
+    <!--==================== SCROLL TOP ====================-->
+    
+
+    <!--==================== SWIPER JS ====================-->
+    <!-- <script src=""></script> -->
+
+    <!--==================== MAIN JS ====================-->
+    <!-- <script src=""></script> -->
+  
+
+
+
+
+
+
+
+    
