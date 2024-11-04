@@ -39,8 +39,8 @@
                         <div class="row", id="desc-row-alt">
                             <div class="col" id="desc-alt">
                                 <p>
-                                The laboratory testbed (Double-Fourier-Interferometry) DFI instruments have been developed by NASA Goddard (U.S.A.), which is a collaboration between Cardiff University, University College London, and the Rutherford Appleton Laboratory (U.K.), the National Astronomical Observatory (Japan), and now the University of Lethbridge (Canada). The DFI testbed design at U Lethbridge is similar to that of a Michelson spatial interferometer coupled to a Mach-Zehnder-like Fourier Transform Spectrometer (FTS) spectral interferometer (similar to the Herschel Spectral and Photometric Imaging Receiver (SPIRE) FTS. The University of Lethbridge played a leading role in the ESA's <a href="https://www.asc-csa.gc.ca/eng/satellites/herschel/">Herschel SPIRE mission</a>!
-                                <br><br><br>As a part of the <a href="https://www.ulethbridge.ca/unews/company/astronomical-instrumentation-group">Astronomical Instrumentation Group (AIG)</a> at U Lethbridge, my research focuses on:   
+                                The laboratory testbed (Double-Fourier-Interferometry) DFI instruments have been developed by NASA Goddard (U.S.A.), which is a collaboration between Cardiff University, University College London, and the Rutherford Appleton Laboratory (U.K.), the National Astronomical Observatory (Japan), and now the University of Lethbridge (Canada). The DFI testbed design at U Lethbridge is similar to that of a Michelson spatial interferometer coupled to a Mach-Zehnder-like Fourier Transform Spectrometer (FTS) spectral interferometer, similar to the Herschel Spectral and Photometric Imaging Receiver (SPIRE) FTS. The University of Lethbridge played a leading role in the ESA's <a href="https://www.asc-csa.gc.ca/eng/satellites/herschel/" target="_blank">Herschel SPIRE mission</a>!
+                                <br><br><br>As a part of the <a href="https://www.ulethbridge.ca/unews/company/astronomical-instrumentation-group" target="_blank">Astronomical Instrumentation Group (AIG)</a> at U Lethbridge, my research focuses on:   
                                 </p> 
                             </div> 
                             <div class="col-md-4" id="self-image-col">
@@ -53,20 +53,19 @@
                         <div class="li-desc", id="li-desc">
                             <ul>
                                 <li>
-                                    Confirming the temperature calibration of the TES Bolometer by employing various current bias values within the 1 μA - 15 μA range.
+                                    Investigating the effects of the bit-depth, which can influence measurement accuracy by transitioning from 32-bit integer PID configuration to 32-bit float PID algorithms.
                                 </li>
                                 <li>
-                                    Investigating the impact of bit depth effect by transitioning from 32-bit integer Proportional-Integral-Derivative (PID) configuration to 32-bit float Proportional-Integral-Derivative (PID) algorithms.
+                                    Deriving and validating the optimal noise parameters for off-axis pixels, akin to the central detector.
                                 </li>
                                 <li>
-                                    Deriving and validating optimal noise parameters for the off-axis pixels akin to the central detector.
+                                    Analyzing the thermal and electrical cross-talk experimental data of the detector system. 
                                 </li>
                                 <li>
-                                    Analyzing the detector's cross-talk experimental data.
+                                    Validating the temperature calibration of the QMC feedback-controlled TES detectors by testing various current bias levels within the 1 μA - 15 μA range.
                                 </li>
                                 <li>
-                                    Comparing the efficacy of rapid scan versus step and integrate modes for the FTS/DFI testbed.
-                                    
+                                    Comparing the efficacy of rapid scan versus step-integrate approaches in the  FTS and DFI modes.
                                 </li>
                             </ul>
                         </div>
@@ -76,28 +75,36 @@
                 
                 <div class="container-fluid">
                     <div class="row">
-                        <h4 id="project-heading">Detection of Super Luminous Supernovae (SLSN) Candidates in the Zwicky Transient Facility (ZTF) using Adaptive Learning</h4>
+                        <h4 id="project-heading">Superluminous Supernovae (SLSN) Search in the Zwicky Transient Facility (ZTF) using PineForest</h4>
                         <p id="project-subheading">
-                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M.V., Malanchev, K.L., Ishida, E.E.O. <a href="https://snad.space">(The SNAD Team)</a>, Identifying Potential Super Luminous Supernovae in the Zwicky Transient Facility through Prior Knowledge in Adaptive Learning. in prep, 2024
+                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M.V., Ishida, E. E. O., Malanchev, K. L., Semenikhin, T. A., Superluminous supernova search with PineForest, <a href="https://arxiv.org/abs/2410.21077" target="_blank">arXiv preprint: 2410.21077</a>.
                         </p>
                         <p class="desc", id="desc">
                             We presented our analysis on data release 8 sourced from the Zwicky Transient Facility (ZTF DR8), focusing on identifying potential Superluminous Supernovae (SLSN) candidates in the ZTF r-band.
-                            <br><br>In our analysis, we utilized the light-curve package developed by Malanchev et al., 2021, to derive 53 statistical features from each light curve. Subsequently, these features were employed in the <a href="https://coniferest.snad.space/en/latest/">Pineforest algorithm</a>, an adaptive learning algorithm developed by Korolev et al. (in prep, 2024). We leveraged the prior knowledge in the pineforest algorithm, which comprises 8 reported SLSN candidates from the <a href="https://www.wis-tns.org">Transient Name Server (TNS)</a> and 60 non-SLSN candidates discovered during our investigation. 
-                            <br><br>Notably, our analysis led to the discovery of two new supernova candidates (<a href="https://www.wis-tns.org/object/2018moa">AT 2018moa</a> and <a href="https://www.wis-tns.org/object/2018mob">AT 2018mob</a>), as reported at TNS by the SNAD team. Moreover, we successfully identified one confirmed Superluminous Supernova (Type-I) - SN 2018fcg and two confirmed Supernovae already reported at TNS as SN 2018dfa and SN 2019bmj. Additionally, our investigation identified several candidates for classification refinement, including - AT 2019nkc, AT 2019sez, AT 2023vgc, AT 2018lus, and AT 2019tjf.
+                            <br><br>In our analysis, we utilized the light-curve package developed by Malanchev et al., 2021, to derive 53 statistical features from each light curve. Subsequently, these features were employed in the <a href="https://coniferest.snad.space/en/latest/" target="_blank">Pineforest algorithm</a>, an active learning algorithm developed by Korolev et al., 2024. We leveraged the prior knowledge in the PineForest algorithm, which comprises 8 reported SLSN from the <a href="https://www.wis-tns.org" target="_blank">Transient Name Server (TNS)</a>. 
+                            <br><br>Our analysis resulted in the discovery of 10 SLSNe candidates, out of which 8 are potential SLSNe, including the discovery of two new supernova candidates (<a href="https://www.wis-tns.org/object/2018moa" target="_blank">AT 2018moa</a> and <a href="https://www.wis-tns.org/object/2018mob" target="_blank">AT 2018mob</a>), as reported at TNS by the SNAD team. The other 6 potential SLSNs are - SN 2018fcg, SN 2018dfa, SN 2019bmj, AT 2019nkc, AT 2019sez, and AT 2019tjf.
+                            <br><br>I have presented the GP Regression modeled light curves for - AT 2018moa (ZTF OID: 821210200003351), AT 2018mob (ZTF OID: 821215400003803), SN 2018dfa (ZTF OID: 794208200041246), and SN 2018fcg (ZTF OID: 689212300032140 and 688209400039752) below.
                         </p>
+                        <div class="row" style="padding-left: 110px">
+                        <img src="../img/AT2018moa.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
+                        <img src="../img/AT2018mob.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
+                        <img src="../img/SN2018dfa.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
+                        <img src="../img/SN2018fcg.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
+                        </div>
                         <hr>
                     </div> 
                 </div>
                 
                 <div class="container-fluid">
                     <div class="row">
-                        <h4 id="project-heading">Detection of Anomalous and Rare Transients in Zwicky Transient Facility (ZTF) using Contrastive Learning
+                        <h4 id="project-heading">Detection of Anomalous and Rare Transients using Contrastive Learning
                         </h4>
                         <p id="project-subheading">
-                            <b>--- Project:</b> In collaboration with <a href="https://snad.space">the SNAD Team</a> and <a href="https://fink-broker.org">the FINK Broker</a>
+                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M. V., Ishida, E. E. O., Malanchev, K. L., Detection of Anomalous and
+                            Rare Transients using Contrastive Learning, in prep, 2024.
                         </p>
                         <p class="desc", id="desc">
-                            This project involves designing a BERT-based transformer model (Devlin et al., 2018) incorporating a contrastive loss function to generate embeddings through unsupervised learning. We will integrate these embeddings into adaptive learning algorithms, such as AAD and Pineforest (part of <a href="https://coniferest.snad.space/en/latest/">the coniferest package</a>), developed by the SNAD team, to detect anomalous light curves within the Zwicky Transient Facility (ZTF). This research is currently undergoing preparation for publication, and a thorough analysis of the findings will be released shortly. The code will be made publicly accessible upon acceptance of the paper.
+                            In collaboration with <a href="https://snad.space" target="_blank">the SNAD Team</a> and <a href="https://fink-broker.org" target="_blank">the FINK Broker</a>, this project involves designing a BERT-based transformer model (Devlin et al., 2018) incorporating a contrastive loss function to generate embeddings of the light curves. This model is tailored for ZTF alerts and upcoming data from the Vera C. Rubin Observatory (LSST). We will then integrate these embeddings into active learning algorithms, such as AAD and PineForest (part of <a href="https://coniferest.snad.space/en/latest/" target="_blank">the coniferest package</a>), developed by the SNAD team to find anomalous light curves. This research is currently undergoing preparation for publication, and a thorough analysis of the findings will be released shortly. The code will be made publicly accessible upon acceptance of the paper.
                         </p>
                         <hr>
                     </div>
@@ -108,6 +115,8 @@
                         <h4 id="project-heading">Deep Probabilistic Neural Network for Inverse Tidal Evolution</h4>
                         <p id="project-subheading">
                             <b>--- Conference Presentation/Project:</b> <a href="https://bsnp.info/International-Meeting-2">The International Meeting on Eclipsing Binary Star Systems, 2024</a>
+                            <br><b>--- Publication:</b> Schussler, J., Penev, K., Majumder, T., Comprehensive Bayesian Modeling of Tidal Circularization of
+                            Kepler Eclipsing Binaries, in prep, 2024.
                         </p>
                         <p class="desc", id="desc">
                             Tidal forces impact the behavior of binary star systems, affecting their observable properties. An analysis of approximately 200 eclipsing binaries observed by the Kepler mission, combined with available stellar and orbital parameters, has led to a catalog suitable for studying the amount and properties of tidal dissipation. We calibrated a tidal dissipation model to simultaneously allow the reproduction of the observed eccentricities of all systems and the period-eccentricity envelope of the entire population. We conduct an MCMC sampling to propagate the observational uncertainties to the final result, which requires a likelihood function to assess how well a given set of parameters aligns with observations. We use a numerical solver at each MCMC step to find the initial orbital period and eccentricity that match the present-day values in the Kepler catalog. However, the solver needs to run many evolutions, testing different initial conditions to reproduce the final values. To address this challenge, we developed a probabilistic deep neural network to provide reasonable estimates for the initial values, requiring fewer evolutions to find the correct initial values owing to faster solver convergence. We first transformed the standardized stellar and orbital parameters into a new latent space using an auto-encoder to extract new embeddings from the regression data set without lossy compression; it enables faster training and prevents vanishing gradients. Subsequently, a probabilistic neural network is modeled as an independent normal distribution, assuming non-linearity in the data to learn the statistical parameters, which we then used to estimate suitable 
