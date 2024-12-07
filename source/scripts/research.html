@@ -28,6 +28,46 @@
                 <hr>
                 <div class="container-fluid">
                     <div class="row">
+                        <h4 id="project-heading">Superluminous Supernovae (SLSN) Search in the Zwicky Transient Facility (ZTF) using PineForest</h4>
+                        <p id="project-subheading">
+                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M.V., Ishida, E. E. O., Malanchev, K. L., Semenikhin, T. A., Superluminous supernova search with PineForest, <a href="https://arxiv.org/abs/2410.21077" target="_blank">arXiv preprint: 2410.21077</a>.
+                        </p>
+                        <p class="desc", id="desc">
+                            A Superluminous Supernova (SLSN) is ~10-100 times more luminous than a normal massive star collapse supernova (such as SN Ia, SN II), with an absolute peak magnitude, M &lt -21, allowing for their detection even at high redshift. However, observing SLSNs has only become more recent with the advent of systematic sky surveys. Presently, ~270 spectroscopically confirmed SLSNs are reported in the <a href="https://www.wis-tns.org" target="_blank">Transient Name Server (TNS)</a>, underscoring their rarity among other supernova types. While SLSNs are known to arise from the collapse of massive stars, their extraordinary luminosity challenges existing explanations for the physical mechanisms that invoke them, spurring extensive research to uncover the possible sources behind their extreme and prolonged luminosities. 
+                            <br><br>
+                            We presented our analysis on data release 8 sourced from the Zwicky Transient Facility (ZTF DR8), focusing on identifying potential Superluminous Supernovae (SLSN) candidates in the ZTF r-band.
+                            <br><br>In our analysis, we utilized the light-curve package developed by Malanchev et al., 2021, to derive 53 statistical features from each light curve. Subsequently, these features were employed in the <a href="https://coniferest.snad.space/en/latest/" target="_blank">Pineforest algorithm</a>, an active learning algorithm developed by Korolev et al., 2024. We leveraged the prior knowledge in the PineForest algorithm, which comprises 8 reported SLSN from TNS. 
+                            <br><br>Our analysis resulted in the discovery of 10 SLSNe candidates, out of which 8 are potential SLSNe, including the discovery of two new supernova candidates (<a href="https://www.wis-tns.org/object/2018moa" target="_blank">AT 2018moa</a> and <a href="https://www.wis-tns.org/object/2018mob" target="_blank">AT 2018mob</a>), as reported at TNS by the SNAD team. The other 6 potential SLSNs are - SN 2018fcg, SN 2018dfa, SN 2019bmj, AT 2019nkc, AT 2019sez, and AT 2019tjf.
+                            <br><br>I have presented the Gaussian Process (GP) Regression modeled light curves for - AT 2018moa (ZTF OID: 821210200003351), AT 2018mob (ZTF OID: 821215400003803), SN 2018dfa (ZTF OID: 794208200041246), and SN 2018fcg (ZTF OID: 689212300032140 and 688209400039752) below.
+                        </p>
+                        <div class="row" style="padding-left: 110px">
+                        <img src="../img/AT2018moa.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
+                        <img src="../img/AT2018mob.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
+                        <img src="../img/SN2018dfa.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
+                        <img src="../img/SN2018fcg.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
+                        </div>
+                        <hr>
+                    </div> 
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <h4 id="project-heading">Detection of Anomalous and Rare Transients using Contrastive Learning
+                        </h4>
+                        <p id="project-subheading">
+                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M. V., Ishida, E. E. O., Malanchev, K. L., Detection of Anomalous and
+                            Rare Transients using Contrastive Learning, in prep, 2024.
+                        </p>
+                        <p class="desc", id="desc">
+                            In recent months, researchers have published various studies on representation learning for transient science using multimodal models that leverage the contrastive loss function, emphasizing an unsupervised learning approach. This advancement will revolutionize cosmological measurements and transient astronomy as we enter a new era of large astronomical surveys.
+                            <br><br>In collaboration with <a href="https://snad.space" target="_blank">the SNAD Team</a>, this project involves designing a BERT-based transformer model (Devlin et al., 2018) integrating a contrastive loss function to generate embeddings of light curves. Incorporating contrastive loss facilitates a natural clustering of similar data, enabling the model to learn a robust representation of the latent space effectively. This model is tailored for ZTF data releases and upcoming data from the Vera C. Rubin Observatory (LSST). We will then integrate these embeddings into active learning algorithms, such as AAD and PineForest (part of <a href="https://coniferest.snad.space/en/latest/" target="_blank">the coniferest package</a>), developed by the SNAD team to find anomalous light curves. This research is currently undergoing preparation for publication, and a thorough analysis of the findings will be released shortly. The code will be made publicly accessible upon acceptance of the paper.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
                         <h4 id="project-heading">
                             Characterization and Optimization of the Transition-Edge-Sensor (TES) Detector Systems in a Double Fourier Interferometer (developed at the University of Lethbridge)
                         </h4>
@@ -40,7 +80,7 @@
                             <div class="col" id="desc-alt">
                                 <p>
                                 The laboratory testbed (Double-Fourier-Interferometry) DFI instruments have been developed by NASA Goddard (U.S.A.), which is a collaboration between Cardiff University, University College London, and the Rutherford Appleton Laboratory (U.K.), the National Astronomical Observatory (Japan), and now the University of Lethbridge (Canada). The DFI testbed design at U Lethbridge is similar to that of a Michelson spatial interferometer coupled to a Mach-Zehnder-like Fourier Transform Spectrometer (FTS) spectral interferometer, similar to the Herschel Spectral and Photometric Imaging Receiver (SPIRE) FTS. The University of Lethbridge played a leading role in the ESA's <a href="https://www.asc-csa.gc.ca/eng/satellites/herschel/" target="_blank">Herschel SPIRE mission</a>!
-                                <br><br><br>As a part of the <a href="https://www.ulethbridge.ca/unews/company/astronomical-instrumentation-group" target="_blank">Astronomical Instrumentation Group (AIG)</a> at U Lethbridge, my research focuses on:   
+                                <br><br><br>As a part of the <a href="https://www.ulethbridge.ca/unews/company/astronomical-instrumentation-group" target="_blank">Astronomical Instrumentation Group (AIG)</a> at U Lethbridge, my research focuses on optimizing and characterizing the TES detector system within the DFI testbed, particularly:   
                                 </p> 
                             </div> 
                             <div class="col-md-4" id="self-image-col">
@@ -72,43 +112,6 @@
                     </div>
                 </div>
                 <hr>
-                
-                <div class="container-fluid">
-                    <div class="row">
-                        <h4 id="project-heading">Superluminous Supernovae (SLSN) Search in the Zwicky Transient Facility (ZTF) using PineForest</h4>
-                        <p id="project-subheading">
-                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M.V., Ishida, E. E. O., Malanchev, K. L., Semenikhin, T. A., Superluminous supernova search with PineForest, <a href="https://arxiv.org/abs/2410.21077" target="_blank">arXiv preprint: 2410.21077</a>.
-                        </p>
-                        <p class="desc", id="desc">
-                            We presented our analysis on data release 8 sourced from the Zwicky Transient Facility (ZTF DR8), focusing on identifying potential Superluminous Supernovae (SLSN) candidates in the ZTF r-band.
-                            <br><br>In our analysis, we utilized the light-curve package developed by Malanchev et al., 2021, to derive 53 statistical features from each light curve. Subsequently, these features were employed in the <a href="https://coniferest.snad.space/en/latest/" target="_blank">Pineforest algorithm</a>, an active learning algorithm developed by Korolev et al., 2024. We leveraged the prior knowledge in the PineForest algorithm, which comprises 8 reported SLSN from the <a href="https://www.wis-tns.org" target="_blank">Transient Name Server (TNS)</a>. 
-                            <br><br>Our analysis resulted in the discovery of 10 SLSNe candidates, out of which 8 are potential SLSNe, including the discovery of two new supernova candidates (<a href="https://www.wis-tns.org/object/2018moa" target="_blank">AT 2018moa</a> and <a href="https://www.wis-tns.org/object/2018mob" target="_blank">AT 2018mob</a>), as reported at TNS by the SNAD team. The other 6 potential SLSNs are - SN 2018fcg, SN 2018dfa, SN 2019bmj, AT 2019nkc, AT 2019sez, and AT 2019tjf.
-                            <br><br>I have presented the GP Regression modeled light curves for - AT 2018moa (ZTF OID: 821210200003351), AT 2018mob (ZTF OID: 821215400003803), SN 2018dfa (ZTF OID: 794208200041246), and SN 2018fcg (ZTF OID: 689212300032140 and 688209400039752) below.
-                        </p>
-                        <div class="row" style="padding-left: 110px">
-                        <img src="../img/AT2018moa.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
-                        <img src="../img/AT2018mob.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
-                        <img src="../img/SN2018dfa.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
-                        <img src="../img/SN2018fcg.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
-                        </div>
-                        <hr>
-                    </div> 
-                </div>
-                
-                <div class="container-fluid">
-                    <div class="row">
-                        <h4 id="project-heading">Detection of Anomalous and Rare Transients using Contrastive Learning
-                        </h4>
-                        <p id="project-subheading">
-                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M. V., Ishida, E. E. O., Malanchev, K. L., Detection of Anomalous and
-                            Rare Transients using Contrastive Learning, in prep, 2024.
-                        </p>
-                        <p class="desc", id="desc">
-                            In collaboration with <a href="https://snad.space" target="_blank">the SNAD Team</a> and <a href="https://fink-broker.org" target="_blank">the FINK Broker</a>, this project involves designing a BERT-based transformer model (Devlin et al., 2018) incorporating a contrastive loss function to generate embeddings of the light curves. This model is tailored for ZTF alerts and upcoming data from the Vera C. Rubin Observatory (LSST). We will then integrate these embeddings into active learning algorithms, such as AAD and PineForest (part of <a href="https://coniferest.snad.space/en/latest/" target="_blank">the coniferest package</a>), developed by the SNAD team to find anomalous light curves. This research is currently undergoing preparation for publication, and a thorough analysis of the findings will be released shortly. The code will be made publicly accessible upon acceptance of the paper.
-                        </p>
-                        <hr>
-                    </div>
-                </div>
                 
                 <div class="container-fluid">
                     <div class="row">
