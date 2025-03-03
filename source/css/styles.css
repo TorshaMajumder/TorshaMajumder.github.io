@@ -156,7 +156,7 @@ h1, h2, h3, h4 {
 #about-me-col
 {
   max-width: 100%;
-  font-size: 21px !important;
+  font-size: 18px !important;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: white;
@@ -170,7 +170,7 @@ h1, h2, h3, h4 {
 #self-image
 {
   max-width: 100%;
-  height: 350px;
+  height: 450px;
   float: right;
   padding-right: 10%;
   padding-left: 10%; 
