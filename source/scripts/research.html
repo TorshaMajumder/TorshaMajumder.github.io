@@ -21,120 +21,231 @@
     
     <body>
         <main class="main">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark" role="navigation" style="background-color:black;">
+                <a class="navbar-brand" href="../../index.html" style="color: #00ffff; font-weight: bold;">Torsha Majumder</a>
+            </nav>
 
             <!--==================== HOME ====================-->
             <section class="research-list" id="research-list">
-                <h1>Current Research</h1>
-                <hr>
-                <div class="container-fluid">
-                    <div class="row">
-                        <h4 id="project-heading">Superluminous Supernovae (SLSN) Search in the Zwicky Transient Facility (ZTF) using PineForest</h4>
-                        <p id="project-subheading">
-                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M.V., Ishida, E. E. O., Malanchev, K. L., Semenikhin, T. A., Superluminous supernova search with PineForest, <a href="https://arxiv.org/abs/2410.21077" target="_blank">arXiv preprint: 2410.21077</a>.
-                        </p>
-                        <p class="desc", id="desc">
-                            A Superluminous Supernova (SLSN) is ~10-100 times more luminous than a normal massive star collapse supernova (such as SN Ia, SN II), with an absolute peak magnitude, M &lt -21, allowing for their detection even at high redshift. However, observing SLSNs has only become more recent with the advent of systematic sky surveys. Presently, ~270 spectroscopically confirmed SLSNs are reported in the <a href="https://www.wis-tns.org" target="_blank">Transient Name Server (TNS)</a>, underscoring their rarity among other supernova types. While SLSNs are known to arise from the collapse of massive stars, their extraordinary luminosity challenges existing explanations for the physical mechanisms that invoke them, spurring extensive research to uncover the possible sources behind their extreme and prolonged luminosities. 
-                            <br><br>
-                            We presented our analysis on data release 8 sourced from the Zwicky Transient Facility (ZTF DR8), focusing on identifying potential Superluminous Supernovae (SLSN) candidates in the ZTF r-band.
-                            <br><br>In our analysis, we utilized the light-curve package developed by Malanchev et al., 2021, to derive 53 statistical features from each light curve. Subsequently, these features were employed in the <a href="https://coniferest.snad.space/en/latest/" target="_blank">Pineforest algorithm</a>, an active learning algorithm developed by Korolev et al., 2024. We leveraged the prior knowledge in the PineForest algorithm, which comprises 8 reported SLSN from TNS. 
-                            <br><br>Our analysis resulted in the discovery of 10 SLSNe candidates, out of which 8 are potential SLSNe, including the discovery of two new supernova candidates (<a href="https://www.wis-tns.org/object/2018moa" target="_blank">AT 2018moa</a> and <a href="https://www.wis-tns.org/object/2018mob" target="_blank">AT 2018mob</a>), as reported at TNS by the SNAD team. The other 6 potential SLSNs are - SN 2018fcg, SN 2018dfa, SN 2019bmj, AT 2019nkc, AT 2019sez, and AT 2019tjf.
-                            <br><br>I have presented the Gaussian Process (GP) Regression modeled light curves for - AT 2018moa (ZTF OID: 821210200003351), AT 2018mob (ZTF OID: 821215400003803), SN 2018dfa (ZTF OID: 794208200041246), and SN 2018fcg (ZTF OID: 689212300032140 and 688209400039752) below.
-                        </p>
-                        <div class="row" style="padding-left: 110px">
-                        <img src="../img/AT2018moa.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
-                        <img src="../img/AT2018mob.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
-                        <img src="../img/SN2018dfa.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
-                        <img src="../img/SN2018fcg.png"id="self-image" style="padding-left: 0px; padding-right: 0px; width: 380px;">
-                        </div>
-                        <hr>
-                    </div> 
+                <div class="research-header-box">
+                    <h1 class="main-research-title">Technical Research & Architectural Innovation</h1>
+                    <p class="research-subtitle">
+                        <span class="pulse-dot"></span> 
+                        Bridging Scientific Discovery with Production-Scale Machine Learning
+                    </p>
                 </div>
-                
-                <div class="container-fluid">
-                    <div class="row">
-                        <h4 id="project-heading">Detection of Anomalous and Rare Transients using Contrastive Learning
-                        </h4>
-                        <p id="project-subheading">
-                            <b>--- Publication/Project:</b> Majumder, T., Pruzhinskaya, M. V., Ishida, E. E. O., Malanchev, K. L., Detection of Anomalous and
-                            Rare Transients using Contrastive Learning, in prep, 2024.
-                        </p>
-                        <p class="desc", id="desc">
-                            In recent months, researchers have published various studies on representation learning for transient science using multimodal models that leverage the contrastive loss function, emphasizing an unsupervised learning approach. This advancement will revolutionize cosmological measurements and transient astronomy as we enter a new era of large astronomical surveys.
-                            <br><br>In collaboration with <a href="https://snad.space" target="_blank">the SNAD Team</a>, this project involves designing a BERT-based transformer model (Devlin et al., 2018) integrating a contrastive loss function to generate embeddings of light curves. Incorporating contrastive loss facilitates a natural clustering of similar data, enabling the model to learn a robust representation of the latent space effectively. This model is tailored for ZTF data releases and upcoming data from the Vera C. Rubin Observatory (LSST). We will then integrate these embeddings into active learning algorithms, such as AAD and PineForest (part of <a href="https://coniferest.snad.space/en/latest/" target="_blank">the coniferest package</a>), developed by the SNAD team to find anomalous light curves. This research is currently undergoing preparation for publication, and a thorough analysis of the findings will be released shortly. The code will be made publicly accessible upon acceptance of the paper.
-                        </p>
-                        <hr>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="row">
-                        <h4 id="project-heading">
-                            Characterization and Optimization of the Transition-Edge-Sensor (TES) Detector Systems in a Double Fourier Interferometer (developed at the University of Lethbridge)
-                        </h4>
-                        <p id="project-subheading"><b>--- M.Sc. Thesis</b></p>
-                        <p class="desc", id="desc">
-                            The study of astronomy in the far-infrared (far-IR) wavelength is critical for gaining insights into the cosmic origins because approximately half of the total energy density of Electromagnetic (EM) radiation emitted by stars and accreting objects in the Universe lies within the far-IR region. Research conducted in far-IR regimes plays a crucial role in enhancing our understanding of the planetary systems and the search for life, the early stages of stellar evolution, the formation of galaxies, and the origins of the Universe.
-                            <br><br>The field of far-IR astronomy presents several key challenges, including the development of suitable detector systems, mitigation of Earth's atmosphere attenuation, the necessity for cryogenic cooling of optical systems and detectors, and the limitation in spatial resolution of observations within the 1 to 12 THz range, which corresponds to far-infrared wavelengths. The astronomical community recognizes that the development of space-based far-IR interferometers holds significant potential to interpret the cosmos in the far-IR wavelength.
-                        </p> 
-                        <div class="row", id="desc-row-alt">
-                            <div class="col" id="desc-alt">
-                                <p>
-                                The laboratory testbed (Double-Fourier-Interferometry) DFI instruments have been developed by NASA Goddard (U.S.A.), which is a collaboration between Cardiff University, University College London, and the Rutherford Appleton Laboratory (U.K.), the National Astronomical Observatory (Japan), and now the University of Lethbridge (Canada). The DFI testbed design at U Lethbridge is similar to that of a Michelson spatial interferometer coupled to a Mach-Zehnder-like Fourier Transform Spectrometer (FTS) spectral interferometer, similar to the Herschel Spectral and Photometric Imaging Receiver (SPIRE) FTS. The University of Lethbridge played a leading role in the ESA's <a href="https://www.asc-csa.gc.ca/eng/satellites/herschel/" target="_blank">Herschel SPIRE mission</a>!
-                                <br><br><br>As a part of the <a href="https://www.ulethbridge.ca/unews/company/astronomical-instrumentation-group" target="_blank">Astronomical Instrumentation Group (AIG)</a> at U Lethbridge, my research focuses on optimizing and characterizing the TES detector system within the DFI testbed, particularly:   
-                                </p> 
-                            </div> 
-                            <div class="col-md-4" id="self-image-col">
-                                <figure>
-                                <img src="../img/dfi.JPG" alt="../img/dfi.JPG" id="self-image">
-                                <figcaption id="fig-caption">DFI testbed @ U Lethbridge</figcaption>
-                                </figure>
-                            </div> 
-                        </div>
-                        <div class="li-desc", id="li-desc">
-                            <ul>
-                                <li>
-                                    Investigating the effects of the bit-depth, which can influence measurement accuracy by transitioning from 32-bit integer PID configuration to 32-bit float PID algorithms.
-                                </li>
-                                <li>
-                                    Deriving and validating the optimal noise parameters for off-axis pixels, akin to the central detector.
-                                </li>
-                                <li>
-                                    Analyzing the thermal and electrical cross-talk experimental data of the detector system. 
-                                </li>
-                                <li>
-                                    Validating the temperature calibration of the QMC feedback-controlled TES detectors by testing various current bias levels within the 1 μA - 15 μA range.
-                                </li>
-                                <li>
-                                    Comparing the efficacy of rapid scan versus step-integrate approaches in the  FTS and DFI modes.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                
-                <div class="container-fluid">
-                    <div class="row">
-                        <h4 id="project-heading">Deep Probabilistic Neural Network for Inverse Tidal Evolution</h4>
-                        <p id="project-subheading">
-                            <b>--- Conference Presentation/Project:</b> <a href="https://bsnp.info/International-Meeting-2">The International Meeting on Eclipsing Binary Star Systems, 2024</a>
-                            <br><b>--- Publication:</b> Schussler, J., Penev, K., Majumder, T., Comprehensive Bayesian Modeling of Tidal Circularization of
-                            Kepler Eclipsing Binaries, in prep, 2024.
-                        </p>
-                        <p class="desc", id="desc">
-                            Tidal forces impact the behavior of binary star systems, affecting their observable properties. An analysis of approximately 200 eclipsing binaries observed by the Kepler mission, combined with available stellar and orbital parameters, has led to a catalog suitable for studying the amount and properties of tidal dissipation. We calibrated a tidal dissipation model to simultaneously allow the reproduction of the observed eccentricities of all systems and the period-eccentricity envelope of the entire population. We conduct an MCMC sampling to propagate the observational uncertainties to the final result, which requires a likelihood function to assess how well a given set of parameters aligns with observations. We use a numerical solver at each MCMC step to find the initial orbital period and eccentricity that match the present-day values in the Kepler catalog. However, the solver needs to run many evolutions, testing different initial conditions to reproduce the final values. To address this challenge, we developed a probabilistic deep neural network to provide reasonable estimates for the initial values, requiring fewer evolutions to find the correct initial values owing to faster solver convergence. We first transformed the standardized stellar and orbital parameters into a new latent space using an auto-encoder to extract new embeddings from the regression data set without lossy compression; it enables faster training and prevents vanishing gradients. Subsequently, a probabilistic neural network is modeled as an independent normal distribution, assuming non-linearity in the data to learn the statistical parameters, which we then used to estimate suitable 
-                            initial guesses for the solver.
-                            <br><br>The initial findings from the 1D solver indicate that the Probabilistic neural network succeeded the existing brute-force algorithm in ~65% of instances, compared to the latter's success rate of ~10%. We anticipate an improvement in the results of both the 1D and 2D solvers compared to the existing model as we accumulate more data.  
-                        </p>
-                        <hr>
-                    </div>
-                </div>
-
             </section>
-            
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- ASTRA ECOSYSTEM SIDE-BY-SIDE EXHIBIT -->
+                        <div class="col-12 mb-5">
+                            <div class="research-card exhibit-box">
+                                <div class="row align-items-center">
+                                    
+                                    <!-- LEFT COLUMN: The Description & Actions -->
+                                    <div class="col-lg-7">
+                                        <h2 style="color: #00ffff; margin-bottom: 20px;">ASTRA: A Foundational Framework for Astronomical SSL</h2>
+                                        
+                                        <div class="tech-badges">
+                                            <span class="badge">Self-Supervised Learning</span>
+                                            <span class="badge">Transformer</span>
+                                            <span class="badge">NVIDIA Academic Grant</span>
+                                        </div>
+
+                                        <div class="research-description">
+                                            <p>
+                                                <b>Astra-CLR:</b> Architected the first multi-filter time-series Transformer for the ZTF survey. 
+                                                Pre-trained on <b>~2.1M unlabeled light curves</b> and scaled to generate embeddings for 
+                                                <b>~70M samples</b> (<i>N</i><sub>obs</sub> &ge; 2000).
+                                            </p>
+                                            <p>
+                                                The framework utilizes a novel multi-view late-fusion architecture and <b>"multi-scale temporal view"</b> 
+                                                mapping strategy (an adaptation from "multi-crop" paradigm) to learn robust <em>local-to-global</em> 
+                                                representations from inhomogeneous multi-filter light curves, achieving a <b>77% fine-tuned accuracy</b> 
+                                                across 12 broader variability classes.
+                                            </p>
+                                            <p>
+                                                <b>Ongoing Expansion:</b> Spearheading the development of <b>"non-contrastive"</b> 
+                                                framework within <b>ASTRA</b> to establish a universal scientific foundation model for 
+                                                multi-survey photometric data and is slated for upcoming release.
+                                            </p>
+                                        </div>
+
+                                        <div class="research-actions mt-4">
+                                            <a href="https://github.com/TorshaMajumder/astra" target="_blank" class="github-btn-sm">🔬 View ASTRA Codebase</a>
+                                            <a href="https://arxiv.org/abs/2606.31627" target="_blank" class="github-btn-sm" style="border-color: #aaa; color: #aaa;">📄 Read Paper (arXiv)</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- RIGHT COLUMN: The Vertical Schematic -->
+                                    <div class="col-lg-5">
+                                        <div class="schematic-sidebar">
+                                            <div class="schematic-frame-v">
+                                                <img src="../img/astra-clr.png" 
+                                                    alt="ASTRA-CLR Schematic" 
+                                                    class="img-fluid vertical-schematic">
+                                            </div>
+                                            <p class="schematic-caption-v">
+                                                <b>Figure 1:</b> The ASTRA-CLR framework utilizes asymmetric temporal views 
+                                                and a shared <b>AstraNet</b> encoder, consisting of a 
+                                                backbone <i>F</i> (&middot;) and a projection head <i>G</i> (&middot;), to maximize 
+                                                agreement in a shared latent space utilizing NT-Xent loss objective.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- PORTFOLIO PROJECTS HEADER -->
+                        <div class="col-12 mt-5 mb-4">
+                            <h3 style="color: #00ffff; border-bottom: 1px solid #333; padding-bottom: 10px; letter-spacing: 1px;">
+                                APPLIED AI & AGENTIC SYSTEMS
+                            </h3>
+                        </div>
+
+                        <!-- Sentinel Hub -->
+                        <div class="col-md-6 mb-4">
+                            <div class="project-mini-card">
+                                <h4>Sentinel-Hub (Multi-Agent System)</h4>
+                                <div class="project-tags">Orchestration • LangGraph • Multi-modal</div>
+                                <p class="project-text">
+                                    <b>Challenge:</b> Enterprise security data is often siloed, making coordinated multi-modal attacks (e.g., a deepfake video paired with a server breach) difficult to investigate.
+                                    <br><b>Solution:</b> Architected a stateful, 4-agent cyclic MAS that orchestrates Vision, Log, and Financial specialist agents to cross-validate findings and generate unified forensic reports.
+                                </p>
+                                <a href="https://github.com/TorshaMajumder/Sentinel-Hub-MAS" target="_blank" class="github-btn-sm">📂 View MAS Architecture</a>
+                            </div>
+                        </div>
+
+                        <!-- DeepShield -->
+                        <div class="col-md-6 mb-4">
+                            <div class="project-mini-card">
+                                <h4>DeepShield (AI Safety & DPO)</h4>
+                                <div class="project-tags">DPO • Alignment • Computer Vision</div>
+                                <p class="project-text">
+                                    <b>Challenge:</b> Baseline deepfake detectors suffer from high false-positive rates on authentic media and low sensitivity toward "seamless" manipulations.
+                                    <br><b>Solution:</b> Implemented <b>Direct Preference Optimization (DPO)</b> based <b>PEFT</b> approach to align a DINOv2 backbone with human-perceived risk, reducing False Positives by 51% while maintaining 97.5% sensitivity on high-fidelity fakes.
+                                </p>
+                                <a href="https://github.com/TorshaMajumder/DeepShield-DPO-Alignment" target="_blank" class="github-btn-sm">📂 View DPO Logic</a>
+                            </div>
+                        </div>
+
+                        <!-- LogSentinel -->
+                        <div class="col-md-4 mb-4">
+                            <div class="project-mini-card">
+                                <h4>LogSentinel (InfraSec)</h4>
+                                <div class="project-tags">Zilliz • BERT • Scaling</div>
+                                <p class="project-text">
+                                    <b>Challenge:</b> Detecting "Zero-Day" infrastructure anomalies in massive, unreadable HDFS log streams.
+                                    <br><b>Solution:</b> Engineered a semantic guard using <b>distilled BERT embeddings</b> and <b>Zilliz (Milvus)</b> to identify out-of-distribution system behaviors in real-time.
+                                </p>
+                                <a href="https://github.com/TorshaMajumder/LogSentinel-AI" target="_blank" class="github-btn-sm">📂 View Code</a>
+                            </div>
+                        </div>
+
+                        <!-- NeuralAudit -->
+                        <div class="col-md-4 mb-4">
+                            <div class="project-mini-card">
+                                <h4>NeuralAudit (FinTech)</h4>
+                                <div class="project-tags">Supabase • SSL • Tabular</div>
+                                <p class="project-text">
+                                    <b>Challenge:</b> Fraud detection in tabular data without historical labels.
+                                    <br><b>Solution:</b> Developed a <b>Self-Supervised</b> anomaly detector using bottleneck autoencoders to identify fraudulent transactions via Euclidean distance in high-dimensional latent space.
+                                </p>
+                                <a href="https://github.com/TorshaMajumder/ssl-fraud-detection" target="_blank" class="github-btn-sm">📂 View Code</a>
+                            </div>
+                        </div>
+
+                        <!-- CanFin -->
+                        <div class="col-md-4 mb-4">
+                            <div class="project-mini-card">
+                                <h4>CanFin RAG (Finance)</h4>
+                                <div class="project-tags">Temporal-RAG • Parsing • Markdown</div>
+                                <p class="project-text">
+                                    <b>Challenge:</b> Standard RAG systems fail to accurately parse complex tables in multi-quarter financial disclosures.
+                                    <br><b>Solution:</b> Built a temporal RAG pipeline using markdown-based table parsing and metadata filtering to enable comparative financial analysis across fiscal periods.
+                                </p>
+                                <a href="https://github.com/TorshaMajumder/CanFin-MultiQuarter-RAG" target="_blank" class="github-btn-sm">📂 View Code</a>
+                            </div>
+                        </div>
+
+                        <!-- FOUNDATIONAL RESEARCH: PHYSICS & INSTRUMENTATION -->
+                        <div class="col-12 mt-5 mb-5">
+                            <div class="research-card exhibit-box">
+                                <div class="row">
+                                    
+                                    <!-- HEADING SECTION -->
+                                    <div class="col-12 mb-4">
+                                        <h2 style="color: #00ffff;">Foundational Research: High-Precision Instrumentation</h2>
+                                        <p style="color: #00ffff; font-weight: bold; font-size: 0.9rem; letter-spacing: 1px;">
+                                            PROJECT: CHARACTERIZATION & OPTIMIZATION OF TES DETECTOR SYSTEMS (U LETHBRIDGE)
+                                        </p>
+                                        <div class="tech-badges">
+                                            <span class="badge">Cryogenics</span>
+                                            <span class="badge">Signal Processing</span>
+                                            <span class="badge">NASA Testbed</span>
+                                            <span class="badge">Interferometry</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- MAIN NARRATIVE & IMAGE -->
+                                    <div class="col-lg-8">
+                                        <p class="research-description">
+                                            My foundational research at the <b>University of Lethbridge</b> focused on the far-infrared (far-IR) 
+                                            regime, a critical wavelength for interpreting cosmic origins. Working within the <b>Astronomical 
+                                                Instrumentation Group (AIG)</b>, I specialized in the characterization 
+                                                of <b>Transition-Edge-Sensor (TES)</b> systems.
+                                        </p>
+                                        <p class="research-description">
+                                            This research utilized a <b>Double-Fourier-Interferometer (DFI)</b> testbed, a 
+                                            collaborative development involving <b>NASA Goddard</b> and international partners. Modeled after 
+                                            the <b>Herschel SPIRE mission</b> architecture, the testbed employs a 
+                                            Michelson spatial interferometer coupled to a Mach-Zehnder-like Fourier 
+                                            Transform Spectrometer spectral interferometer. My work bridged the gap between 
+                                            cryogenic hardware and digital signal integrity.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-4 text-center">
+                                        <div class="lab-photo-frame">
+                                            <img src="../img/dfi.JPG" alt="DFI Testbed Lab" class="img-fluid lab-img">
+                                            <p class="schematic-caption-v">DFI testbed @ U Lethbridge Instrumentation Lab</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- TECHNICAL DEEP-DIVE BULLETS -->
+                                    <div class="col-12 mt-4">
+                                        <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 15px;">Key Engineering Contributions:</h4>
+                                        <ul class="highlight-list" style="font-size: 1rem;">
+                                            <li><b>Signal Accuracy:</b> Evaluated measurement precision by transitioning PID control logic from 32-bit integer to <b>32-bit float algorithms</b>.</li>
+                                            <li><b>Noise Analysis:</b> Derived and validated optimal noise parameters for off-axis pixels to ensure detector-array consistency.</li>
+                                            <li><b>System Calibration:</b> Validated temperature calibration of feedback-controlled TES detectors across 1&mu;A - 15&mu;A current bias ranges.</li>
+                                            <li><b>Cross-talk Modeling:</b> Analyzed thermal and electrical cross-talk experimental data to optimize multi-pixel isolation.</li>
+                                            <li><b>Efficacy Benchmarking:</b> Compared rapid-scan vs. step-integrate approaches in FTS and DFI interferometry modes.</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                    
+                
         </main>
         <!--==================== FOOTER ====================-->
-        <footer class="footer">&copy; 2024 Torsha Majumder</footer>
+        <!-- <footer class="footer">&copy; 2026 Torsha Majumder</footer> -->
+         <footer class="footer">
+            &copy; 2026 Torsha Majumder • 
+            <span class="footer-links">
+                <a href="https://www.linkedin.com/in/torshamajumder" target="_blank">LinkedIn</a> • 
+                <a href="https://github.com/TorshaMajumder" target="_blank">GitHub</a> • 
+                <a href="https://huggingface.co/ashrot" target="_blank">Hugging Face</a> • 
+                <a href="../scripts/connect.html">Contact</a>
+            </span>
+        </footer>
     </body>
 </html>
 

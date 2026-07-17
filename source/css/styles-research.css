@@ -220,7 +220,7 @@ hr{
 
 /*==================== FOOTER ====================*/
 
-.footer{
+/* .footer{
     margin: 0%;
     float: right;
     padding-top: 1.5rem;
@@ -229,7 +229,37 @@ hr{
     font-family: 'Lato', sans-serif;
     font-size: 16px !important;
     font-weight: 400;
+  } */
+
+
+  .footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #777; /* Subtle grey for the copyright */
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Faint separation line */
+  margin-top: 60px;
+}
+
+.footer-links a {
+  color: #777;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00ffff; /* Cyan glow on hover */
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+
+/* Responsive check for mobile */
+@media (max-width: 600px) {
+  .footer-links {
+    display: block;
+    margin-top: 10px;
   }
+}
 
 
 /*==================== MEDIA QUERIES ====================*/
@@ -347,3 +377,264 @@ hr{
           }
 /* For medium devices */
 /* For large devices */
+
+
+/*==================== BASE ====================*/
+
+.research-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+
+.research-description {
+    font-size: 1.0rem; 
+    color: #e0e0e0;
+    line-height: 1.8;
+    text-align: left;
+}
+
+
+.project-mini-card {
+    background: rgba(255, 255, 255, 0.03); 
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+
+.project-mini-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.project-tags {
+    color: #00ffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.project-text {
+    color: #f0f0f0; 
+    font-size: 1.05rem; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-mini-card h4 {
+    color: #ffffff; /* Bright titles */
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.tech-badges {
+    margin: 15px 0;
+}
+
+.badge {
+    background: rgba(0, 255, 255, 0.1);
+    color: #00ffff;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+.research-text {
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Small Github Buttons */
+.github-btn-sm {
+    display: inline-block;
+    padding: 6px 15px;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.github-btn-sm:hover {
+    background: #00ffff;
+    color: #000;
+}
+
+
+.schematic-container {
+    margin: 40px 0;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.schematic-header {
+    color: #00ffff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.schematic-frame {
+    background: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.1); 
+    text-align: center;
+}
+
+.schematic-img {
+    max-height: 450px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.schematic-caption {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    border-left: 3px solid #00ffff;
+    padding-left: 15px;
+    text-align: left;
+}
+
+
+/* Framing for the Vertical Image */
+.schematic-sidebar {
+    padding: 10px;
+    background: rgba(0, 255, 255, 0.02);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.05);
+}
+
+.schematic-frame-v {
+    background: #ffffff; /* Contrast for the diagram */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.vertical-schematic {
+    max-height: 550px; /* Limits the vertical height to prevent too much scrolling */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.schematic-caption-v {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4;
+}
+
+/* Ensure badges look clean next to larger text */
+.badge {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+}
+
+
+.lab-photo-frame {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.lab-img {
+    border-radius: 8px;
+    filter: brightness(0.9) contrast(1.1); 
+    transition: filter 0.3s ease;
+}
+
+.lab-img:hover {
+    filter: brightness(1.1);
+}
+
+/* Ensure the bullets match the rest of the research page */
+.highlight-list li {
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+
+.research-header-box {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+    text-align: center; /* Centers the H1 */
+}
+
+
+.main-research-title {
+    color: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+
+.research-subtitle {
+    color: #00ffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15px;
+    opacity: 0.9;
+}
+
+
+@keyframes pulse-cyan {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(0, 255, 255, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 255, 255, 0); }
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background: #00ffff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse-cyan 2s infinite; 
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .main-research-title {
+        font-size: 1.8rem;
+    }
+}
