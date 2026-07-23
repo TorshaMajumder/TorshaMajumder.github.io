@@ -49,14 +49,21 @@
                                         <div class="tech-badges">
                                             <span class="badge">Self-Supervised Learning</span>
                                             <span class="badge">Transformer</span>
+                                            <span class="badge">TensorFlow MirroredStrategy</span> 
+                                            <span class="badge">8x NVIDIA A100 (80GB)</span> 
                                             <span class="badge">NVIDIA Academic Grant</span>
                                         </div>
 
                                         <div class="research-description">
                                             <p>
                                                 <b>Astra-CLR:</b> Architected the first multi-filter time-series Transformer for the ZTF survey. 
-                                                Pre-trained on <b>~2.1M unlabeled light curves</b> and scaled to generate embeddings for 
-                                                <b>~70M samples</b> (<i>N</i><sub>obs</sub> &ge; 2000).
+                                                Pre-trained on <b>~2.1M unlabeled light curves</b> utilizing <b>TensorFlow MirroredStrategy</b> 
+                                                across a cluster of <b>8x NVIDIA A100 80GB GPUs</b>.
+                                            </p>
+                                            <p>
+                                                <b>High-Throughput Inference:</b> Successfully scaled the pipeline to generate representational 
+                                                embeddings for <b>~70 Million samples</b> (<i>N</i><sub>obs</sub> &ge; 2000), establishing a 
+                                                foundational-scale dataset for international team-wide research.
                                             </p>
                                             <p>
                                                 The framework utilizes a novel multi-view late-fusion architecture and <b>"multi-scale temporal view"</b> 

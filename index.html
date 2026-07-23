@@ -76,7 +76,7 @@
         <div class="highlight-container">
           <div class="highlight-card">
             <div class="h-icon">🏆</div>
-            <div class="h-text"><b>NVIDIA Grant Recipient</b><br>Lead Architect for ASTRA</div>
+            <div class="h-text"><b>NVIDIA Grant Recipient</b><br>Lead Architect for ASTRA; Distributed training on 8x A100 GPUs</div>
           </div>
           <div class="highlight-card">
             <div class="h-icon">📈</div>
@@ -94,10 +94,8 @@
           <ul class="highlight-list">
             <li>
               <b>ASTRA (Self-Supervised Representation Learning Framework):</b> Architected a modular SSL framework; engineered 
-                <b>Astra-CLR</b>, a multi-filter Transformer pre-trained on ~2.1M and 
-                <b>scaled to generate embeddings for ~70M ZTF light curves</b> 
-                (<i>N</i><sub>obs</sub> &ge; 2000) for international team-wide research. 
-                [supported by <b>NVIDIA Academic Grant</b>]
+                <b>Astra-CLR</b>, a multi-filter time-series Transformer <b>leveraging a cluster of 8x NVIDIA A100 80GB GPUs</b> 
+                to pre-train on 2.1M and scale to ~70M light curves for international team-wide research. [supported by <b>NVIDIA Academic Grant</b>]
               <div class="inline-action">
                 <span class="hand-pointer">👉</span>
                 <a href="https://github.com/TorshaMajumder/astra" target="_blank" class="github-btn-sm">
@@ -161,9 +159,10 @@
                     <div class="date">Lead ML Architect [NVIDIA Grant Recipient]</div>
                     <div class="title"><span id="uni-date">2025 - Present</span></div>
                     <div class="descr">1. <b>The ASTRA Ecosystem (SNAD Collaboration):</b> Architected a modular SSL framework and 
-                      engineered <b>Astra-CLR</b>, the first Contrastive Learning multi-filter Transformer for astronomical time-series.
+                      engineered <b>Astra-CLR</b>, the first Contrastive Learning multi-filter time-series Transformer 
+                      pre-trained on <b>8x NVIDIA A100 80GB GPUs</b> using <b>TensorFlow MirroredStrategy</b> for astronomical time-series.
                       <br><br>2. <b>Massive-Scale Inference:</b> Pre-trained on ~2.1M samples and <b>scaled to generate embeddings for ~70M 
-                      ZTF light curves</b> (<i>N</i><sub>obs</sub> &ge; 2000) for internal team-wide discovery and research.
+                      ZTF light curves</b> for internal team-wide discovery and research.
                       <br><br>2. <b>Ongoing Research:</b> Spearheading the expansion of <b>ASTRA</b> into <b>non-contrastive</b> architectures, 
                       targeting foundational-scale representational learning for multi-survey scientific data.
                       <br><br>3. <b>Status:</b> First-author research submitted to <b>A&C Journal (arXiv)</b>; breakthrough methodology 
@@ -338,7 +337,7 @@
                           Prompt Engineering (Gemini 3.1/3.5, Llama 3, OpenAI)</div>
                   </li>
                   <li>
-                    <div class="descr"><span style="font-weight: 600;">Infrastructure & MLOps:</span> Inference Optimization • Parameter-Efficient Fine-tuning (PEFT) • AWS (SageMaker, S3,
+                    <div class="descr"><span style="font-weight: 600;">Infrastructure & MLOps:</span> Distributed Training • Multi-GPU Orchestration • NCCL • Inference Optimization • Parameter-Efficient Fine-tuning (PEFT) • AWS (SageMaker, S3,
                           Boto3) • Docker/Containerization • NVIDIA Brev • MLflow • Zilliz (Milvus) • Supabase (pgvector) • Automated Deployment Workflows • Linux/Bash
                     </div>
                   </li>
